@@ -4,7 +4,7 @@ import Image from "next/image";
 import Search from "@/components/Search";
 import FileUploader from "@/components/FileUploader";
 import { signOutUser } from "@/lib/actions/user.actions";
-
+import logo from "../components/ui/Logo.svg"
 const Header = ({
   userId,
   accountId,
@@ -26,7 +26,7 @@ const Header = ({
         >
           <Button type="submit" className="sign-out-button">
             <Image
-              src="/assets/icons/logout.svg"
+              src={logo}
               alt="logo"
               width={24}
               height={24}

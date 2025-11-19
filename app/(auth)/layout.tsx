@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import logowhite from "../../components/ui/logowhite.svg"
+import logo from "../../components/ui/Logo.svg"
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="flex min-h-screen">
@@ -33,7 +34,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <section className="flex flex-1 flex-col items-center bg-white p-4 py-10 lg:justify-center lg:p-10 lg:py-0">
         <div className="mb-16 lg:hidden">
           <Image
-            src="/assets/icons/logo-full-brand.svg"
+            src={logo}
             alt="logo"
             width={224}
             height={82}
